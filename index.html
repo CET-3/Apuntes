@@ -1,11 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conceptos Basicos de HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Hola Mundo
+    <header>
+        <h1>Conceptos basicos de HTML</h1>
+        <p>
+            HTML es el lenguaje que usamos para darle estructura al contenido de una pagina web.
+            Con etiquetas definimos titulos, parrafos, listas, enlaces, imagenes y formularios.
+        </p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Estructura general</h2>
+            <p>Un documento HTML suele empezar con estas partes principales:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Mi pagina&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Contenido visible
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p>
+                <code>&lt;head&gt;</code> guarda informacion para el navegador y
+                <code>&lt;body&gt;</code> contiene lo que ve el usuario.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Etiquetas basicas</h2>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Titulos</h3>
+                    <p>Se usan con <code>&lt;h1&gt;</code> hasta <code>&lt;h6&gt;</code>.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Parrafos</h3>
+                    <p>Se escriben con la etiqueta <code>&lt;p&gt;</code>.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Contenedores</h3>
+                    <p><code>&lt;div&gt;</code> y <code>&lt;section&gt;</code> ayudan a organizar el contenido.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Listas</h2>
+            <p>HTML permite crear listas ordenadas y desordenadas.</p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Lista desordenada</h3>
+                    <ul>
+                        <li>Elemento uno</li>
+                        <li>Elemento dos</li>
+                        <li>Elemento tres</li>
+                    </ul>
+                </article>
+                <article class="tarjeta">
+                    <h3>Lista ordenada</h3>
+                    <ol>
+                        <li>Abrir el editor</li>
+                        <li>Escribir HTML</li>
+                        <li>Guardar y probar</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Enlaces e imagenes</h2>
+            <p>
+                Los enlaces se crean con <code>&lt;a&gt;</code> y las imagenes con <code>&lt;img&gt;</code>.
+            </p>
+            <p>
+                Ejemplo de enlace:
+                <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+                    Aprender mas sobre HTML
+                </a>
+            </p>
+            <img
+                src="html5.svg"
+                alt="Ejemplo de imagen en HTML"
+                style="width: 100%; max-width: 260px; border-radius: 12px; border: 1px solid var(--borde);"
+            >
+        </section>
+
+        <section>
+            <h2>5. Formularios</h2>
+            <p>Los formularios permiten ingresar datos desde la pagina.</p>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribi tu nombre">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribi un comentario"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Esta pagina resume los conceptos iniciales para empezar a trabajar con HTML.</p>
+    </footer>
 </body>
 </html>
