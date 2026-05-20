@@ -139,6 +139,12 @@
                     <p>Son cambios que ya seleccionaste para que entren en el próximo commit.</p>
                 </article>
             </div>
+            <p>Comando equivalente:</p>
+            <pre><code># Agrega un archivo al área de preparación
+git add index.html</code></pre>
+            <p>También se puede agregar otro archivo puntual:</p>
+            <pre><code># Agrega un archivo específico
+git add style.css</code></pre>
             <p class="destacado">Idea simple: staged significa listo para guardar.</p>
         </section>
 
@@ -152,6 +158,9 @@
                 <li>Elegir una carpeta para guardarlo.</li>
                 <li>Apretar <code>Open</code> cuando termine.</li>
             </ol>
+            <p>Comando equivalente:</p>
+            <pre><code># Descarga el proyecto por primera vez
+git clone https://github.com/CET-3/propuesta1.git</code></pre>
             <p class="destacado">Clone significa bajar el proyecto por primera vez.</p>
         </section>
 
@@ -164,8 +173,14 @@
                 <li>Escribir un mensaje corto y claro.</li>
                 <li>Tocar <code>Commit</code>.</li>
             </ol>
-            <pre><code>Ejemplos de mensajes:
-Agrega página inicial
+            <p>Comandos equivalentes:</p>
+            <pre><code># Prepara el archivo para el commit
+git add index.html
+
+# Guarda una foto de los cambios
+git commit -m "Agrega página inicial"</code></pre>
+            <p>Ejemplos de mensajes:</p>
+            <pre><code>Agrega página inicial
 Corrige colores
 Separa estilos en CSS</code></pre>
         </section>
@@ -182,6 +197,12 @@ Separa estilos en CSS</code></pre>
                     <p>Antes de empezar a trabajar, conviene hacer <code>Pull</code> para traer los cambios nuevos.</p>
                 </article>
             </div>
+            <p>Comandos equivalentes:</p>
+            <pre><code># Sube los cambios a GitHub
+git push
+
+# Trae cambios nuevos desde GitHub
+git pull</code></pre>
         </section>
 
         <section>
@@ -195,6 +216,18 @@ Separa estilos en CSS</code></pre>
                 <li>Hacer <code>Commit</code>.</li>
                 <li>Hacer <code>Push</code>.</li>
             </ol>
+            <p>Ejemplo completo por terminal:</p>
+            <pre><code># Actualiza la copia local
+git pull
+
+# Prepara un archivo para el commit
+git add style.css
+
+# Guarda los cambios con un mensaje
+git commit -m "Actualiza el proyecto"
+
+# Sube los cambios a GitHub
+git push</code></pre>
         </section>
 
         <section>
