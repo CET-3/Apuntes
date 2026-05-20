@@ -8,12 +8,23 @@
 </head>
 <body>
     <header>
-        <p class="etiqueta">Apuntes MutuApp</p>
-        <h1>Git y GitHub en VS Code</h1>
-        <p>
-            Esta página resume las ideas básicas que hace falta conocer para trabajar con un proyecto,
-            guardar cambios y subirlos a GitHub usando la interfaz gráfica de VS Code.
-        </p>
+        <div class="hero">
+            <div class="hero-marca">
+                <img src="logo-unidos-cet3.png" alt="Logo de Unidos Mutual Escolar CET 3" class="logo-mutual">
+                <div>
+                    <p class="etiqueta">Apuntes MutuApp</p>
+                    <h1>Git y GitHub en VS Code</h1>
+                    <p class="hero-texto">
+                        Esta página resume las ideas básicas que hace falta conocer para trabajar con un proyecto,
+                        guardar cambios y subirlos a GitHub usando la interfaz gráfica de VS Code.
+                    </p>
+                </div>
+            </div>
+            <nav class="nav-apuntes" aria-label="Navegación entre apuntes">
+                <a href="index.html" class="nav-link">HTML básico</a>
+                <a href="git-github.html" class="nav-link actual">Git y GitHub</a>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -36,7 +47,57 @@
         </section>
 
         <section>
-            <h2>2. Palabras importantes</h2>
+            <h2>2. Por qué usar un editor de código</h2>
+            <p>
+                Un editor de código está pensado para programar. No solo deja escribir, sino que también
+                ayuda a entender y organizar mejor el trabajo.
+            </p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Ayuda visual</h3>
+                    <p>Colorea etiquetas, muestra mejor el código y hace más fácil encontrar errores.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Más orden</h3>
+                    <p>Permite trabajar con carpetas, archivos y sangrías de una manera más clara.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Herramientas útiles</h3>
+                    <p>Puede autocompletar, marcar errores y conectarse con Git y GitHub.</p>
+                </article>
+            </div>
+            <p class="destacado">
+                Idea simple: un editor de texto sirve para escribir. Un editor de código sirve para escribir código mejor.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Por qué trabajar con GitHub</h2>
+            <p>
+                GitHub permite guardar el proyecto en internet y llevar un registro de los cambios.
+                También facilita el trabajo en equipo.
+            </p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Copia de seguridad</h3>
+                    <p>Si la computadora falla, el proyecto sigue guardado en GitHub.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Historial</h3>
+                    <p>Permite ver qué cambió, cuándo cambió y volver atrás si hace falta.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Trabajo compartido</h3>
+                    <p>Hace más fácil colaborar y acceder al proyecto desde distintas computadoras.</p>
+                </article>
+            </div>
+            <p class="destacado">
+                Idea simple: GitHub sirve para guardar, compartir y ordenar la historia del proyecto.
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Palabras importantes</h2>
             <div class="grid">
                 <article class="tarjeta">
                     <h3>Repositorio</h3>
@@ -66,7 +127,7 @@
         </section>
 
         <section>
-            <h2>3. Changes y Staged Changes</h2>
+            <h2>5. Changes y Staged Changes</h2>
             <p>En la pestaña <code>Source Control</code> de VS Code aparecen los archivos modificados.</p>
             <div class="grid">
                 <article class="tarjeta">
@@ -82,7 +143,7 @@
         </section>
 
         <section>
-            <h2>4. Cómo clonar un proyecto desde la UI</h2>
+            <h2>6. Cómo clonar un proyecto desde la UI</h2>
             <ol>
                 <li>Abrir VS Code.</li>
                 <li>Apretar <code>Ctrl + Shift + P</code>.</li>
@@ -95,7 +156,7 @@
         </section>
 
         <section>
-            <h2>5. Cómo hacer un commit desde la UI</h2>
+            <h2>7. Cómo hacer un commit desde la UI</h2>
             <ol>
                 <li>Ir a <code>Source Control</code>.</li>
                 <li>Buscar los archivos modificados.</li>
@@ -110,7 +171,7 @@ Separa estilos en CSS</code></pre>
         </section>
 
         <section>
-            <h2>6. Como hacer push y pull</h2>
+            <h2>8. Cómo hacer push y pull</h2>
             <div class="grid">
                 <article class="tarjeta">
                     <h3>Push</h3>
@@ -124,7 +185,7 @@ Separa estilos en CSS</code></pre>
         </section>
 
         <section>
-            <h2>7. Orden recomendado de trabajo</h2>
+            <h2>9. Orden recomendado de trabajo</h2>
             <ol>
                 <li>Abrir el proyecto.</li>
                 <li>Hacer <code>Pull</code> si hace falta actualizar.</li>
@@ -137,7 +198,7 @@ Separa estilos en CSS</code></pre>
         </section>
 
         <section>
-            <h2>8. Enlace a la otra página</h2>
+            <h2>10. Enlace a la otra página</h2>
             <p>Un enlace entre páginas del mismo proyecto se hace con la etiqueta <code>&lt;a&gt;</code>.</p>
             <pre><code>&lt;a href="index.html"&gt;Volver a HTML básico&lt;/a&gt;</code></pre>
             <p class="destacado">
