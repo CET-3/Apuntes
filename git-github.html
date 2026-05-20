@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git y GitHub en VS Code</title>
+    <title>Introducción a VS Code, GitHub y Vercel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,37 +13,42 @@
                 <img src="logo-unidos-cet3.png" alt="Logo de Unidos Mutual Escolar CET 3" class="logo-mutual">
                 <div>
                     <p class="etiqueta">Apuntes MutuApp</p>
-                    <h1>Git y GitHub en VS Code</h1>
+                    <h1>Introducción a VS Code, GitHub y Vercel</h1>
                     <p class="hero-texto">
                         Esta página resume las ideas básicas que hace falta conocer para trabajar con un proyecto,
-                        guardar cambios y subirlos a GitHub usando la interfaz gráfica de VS Code.
+                        escribir código, guardarlo en GitHub y publicarlo en internet.
                     </p>
                 </div>
             </div>
             <nav class="nav-apuntes" aria-label="Navegación entre apuntes">
                 <a href="index.html" class="nav-link">HTML básico</a>
-                <a href="git-github.html" class="nav-link actual">Git y GitHub</a>
+                <a href="git-github.html" class="nav-link actual">Introducción</a>
+                <a href="vscode.html" class="nav-link">VS Code</a>
+                <a href="git.html" class="nav-link">Git y GitHub</a>
             </nav>
         </div>
     </header>
 
     <main>
         <section>
-            <h2>1. Qué es cada cosa</h2>
+            <h2>1. Introducción a las tres herramientas</h2>
             <div class="grid">
                 <article class="tarjeta">
-                    <h3>Git</h3>
-                    <p>Es una herramienta que sirve para guardar cambios en un proyecto.</p>
+                    <h3>VS Code</h3>
+                    <p>Es el editor donde escribimos código y organizamos los archivos del proyecto.</p>
                 </article>
                 <article class="tarjeta">
                     <h3>GitHub</h3>
-                    <p>Es una página web donde los proyectos pueden guardarse y compartirse por internet.</p>
+                    <p>Es una página web donde guardamos el proyecto y su historial de cambios.</p>
                 </article>
                 <article class="tarjeta">
-                    <h3>VS Code</h3>
-                    <p>Es el editor donde escribimos código y también podemos usar Git con botones.</p>
+                    <h3>Vercel</h3>
+                    <p>Es una plataforma que publica el proyecto en internet para que otras personas puedan verlo.</p>
                 </article>
             </div>
+            <p class="destacado">
+                Idea simple: VS Code sirve para crear, GitHub sirve para guardar y Vercel sirve para publicar.
+            </p>
         </section>
 
         <section>
@@ -97,152 +102,55 @@
         </section>
 
         <section>
-            <h2>4. Palabras importantes</h2>
+            <h2>4. Qué hace Vercel</h2>
+            <p>
+                Vercel toma el proyecto y lo convierte en una página web accesible desde internet.
+                Así, el trabajo deja de estar solo en la computadora o en GitHub y pasa a estar publicado.
+            </p>
             <div class="grid">
                 <article class="tarjeta">
-                    <h3>Repositorio</h3>
-                    <p>Es la carpeta del proyecto que está controlada con Git.</p>
+                    <h3>Publicación</h3>
+                    <p>Genera una dirección web para abrir el proyecto desde cualquier navegador.</p>
                 </article>
                 <article class="tarjeta">
-                    <h3>Commit</h3>
-                    <p>Es una foto guardada de los cambios que elegiste.</p>
+                    <h3>Actualización</h3>
+                    <p>Puede volver a publicar la página cuando hacemos cambios nuevos en el repositorio.</p>
                 </article>
                 <article class="tarjeta">
-                    <h3>Push</h3>
-                    <p>Es la acción de subir tus commits a GitHub.</p>
-                </article>
-                <article class="tarjeta">
-                    <h3>Pull</h3>
-                    <p>Es la acción de traer cambios nuevos desde GitHub a tu computadora.</p>
-                </article>
-                <article class="tarjeta">
-                    <h3>Clone</h3>
-                    <p>Es bajar un proyecto por primera vez a tu computadora.</p>
-                </article>
-                <article class="tarjeta">
-                    <h3>Branch</h3>
-                    <p>Es una rama de trabajo dentro del proyecto.</p>
+                    <h3>Compartir</h3>
+                    <p>Permite mostrar el proyecto a otras personas sin pasarles la carpeta completa.</p>
                 </article>
             </div>
-        </section>
-
-        <section>
-            <h2>5. Changes y Staged Changes</h2>
-            <p>En la pestaña <code>Source Control</code> de VS Code aparecen los archivos modificados.</p>
-            <div class="grid">
-                <article class="tarjeta">
-                    <h3>Changes</h3>
-                    <p>Son cambios que hiciste, pero todavía no preparaste para guardar.</p>
-                </article>
-                <article class="tarjeta">
-                    <h3>Staged Changes</h3>
-                    <p>Son cambios que ya seleccionaste para que entren en el próximo commit.</p>
-                </article>
-            </div>
-            <p>Comando equivalente:</p>
-            <pre><code># Agrega un archivo al área de preparación
-git add index.html</code></pre>
-            <p>También se puede agregar otro archivo puntual:</p>
-            <pre><code># Agrega un archivo específico
-git add style.css</code></pre>
-            <p class="destacado">Idea simple: staged significa listo para guardar.</p>
-        </section>
-
-        <section>
-            <h2>6. Cómo clonar un proyecto desde la UI</h2>
-            <ol>
-                <li>Abrir VS Code.</li>
-                <li>Apretar <code>Ctrl + Shift + P</code>.</li>
-                <li>Escribir <code>Git: Clone</code>.</li>
-                <li>Pegar la dirección del repositorio.</li>
-                <li>Elegir una carpeta para guardarlo.</li>
-                <li>Apretar <code>Open</code> cuando termine.</li>
-            </ol>
-            <p>Comando equivalente:</p>
-            <pre><code># Descarga el proyecto por primera vez
-git clone https://github.com/CET-3/propuesta1.git</code></pre>
-            <p class="destacado">Clone significa bajar el proyecto por primera vez.</p>
-        </section>
-
-        <section>
-            <h2>7. Cómo hacer un commit desde la UI</h2>
-            <ol>
-                <li>Ir a <code>Source Control</code>.</li>
-                <li>Buscar los archivos modificados.</li>
-                <li>Tocar el signo <code>+</code> para pasarlos a <code>Staged Changes</code>.</li>
-                <li>Escribir un mensaje corto y claro.</li>
-                <li>Tocar <code>Commit</code>.</li>
-            </ol>
-            <p>Comandos equivalentes:</p>
-            <pre><code># Prepara el archivo para el commit
-git add index.html
-
-# Guarda una foto de los cambios
-git commit -m "Agrega página inicial"</code></pre>
-            <p>Ejemplos de mensajes:</p>
-            <pre><code>Agrega página inicial
-Corrige colores
-Separa estilos en CSS</code></pre>
-        </section>
-
-        <section>
-            <h2>8. Cómo hacer push y pull</h2>
-            <div class="grid">
-                <article class="tarjeta">
-                    <h3>Push</h3>
-                    <p>Después del commit, hay que tocar <code>Push</code> o <code>Sync Changes</code> para subirlo a GitHub.</p>
-                </article>
-                <article class="tarjeta">
-                    <h3>Pull</h3>
-                    <p>Antes de empezar a trabajar, conviene hacer <code>Pull</code> para traer los cambios nuevos.</p>
-                </article>
-            </div>
-            <p>Comandos equivalentes:</p>
-            <pre><code># Sube los cambios a GitHub
-git push
-
-# Trae cambios nuevos desde GitHub
-git pull</code></pre>
-        </section>
-
-        <section>
-            <h2>9. Orden recomendado de trabajo</h2>
-            <ol>
-                <li>Abrir el proyecto.</li>
-                <li>Hacer <code>Pull</code> si hace falta actualizar.</li>
-                <li>Modificar los archivos.</li>
-                <li>Revisar cambios en <code>Source Control</code>.</li>
-                <li>Pasarlos a <code>Staged Changes</code>.</li>
-                <li>Hacer <code>Commit</code>.</li>
-                <li>Hacer <code>Push</code>.</li>
-            </ol>
-            <p>Ejemplo completo por terminal:</p>
-            <pre><code># Actualiza la copia local
-git pull
-
-# Prepara un archivo para el commit
-git add style.css
-
-# Guarda los cambios con un mensaje
-git commit -m "Actualiza el proyecto"
-
-# Sube los cambios a GitHub
-git push</code></pre>
-        </section>
-
-        <section>
-            <h2>10. Enlace a la otra página</h2>
-            <p>Un enlace entre páginas del mismo proyecto se hace con la etiqueta <code>&lt;a&gt;</code>.</p>
-            <pre><code>&lt;a href="index.html"&gt;Volver a HTML básico&lt;/a&gt;</code></pre>
             <p class="destacado">
-                Probá este enlace:
-                <a href="index.html">Volver a la página de HTML básico</a>
+                Idea simple: GitHub guarda el proyecto y Vercel lo muestra en internet.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Cómo seguir</h2>
+            <p>
+                Después de esta introducción, podés seguir con el apunte específico de cada tema.
+            </p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Apunte de VS Code</h3>
+                    <p>Explica para qué sirve el editor, cómo ayuda a programar y cómo usar su interfaz.</p>
+                    <p><a href="vscode.html">Ir al apunte de VS Code</a></p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Apunte de Git y GitHub</h3>
+                    <p>Explica commits, push, pull, clone y la relación entre GitHub y Vercel.</p>
+                    <p><a href="git.html">Ir al apunte de Git y GitHub</a></p>
+                </article>
+            </div>
+            <p class="destacado">
+                Podés usar esta página como punto de partida y después entrar a cada apunte por separado.
             </p>
         </section>
     </main>
 
     <footer>
-        <p>Resumen rápido: clone baja, pull actualiza, commit guarda y push sube.</p>
+        <p>Resumen rápido: VS Code sirve para crear, GitHub para guardar y Vercel para publicar.</p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git y GitHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="hero-marca">
+                <img src="logo-unidos-cet3.png" alt="Logo de Unidos Mutual Escolar CET 3" class="logo-mutual">
+                <div>
+                    <p class="etiqueta">Apuntes MutuApp</p>
+                    <h1>Git y GitHub</h1>
+                    <p class="hero-texto">
+                        Este apunte explica cómo guardar cambios, trabajar con un repositorio y usar GitHub
+                        para compartir el proyecto y publicarlo con Vercel.
+                    </p>
+                </div>
+            </div>
+            <nav class="nav-apuntes" aria-label="Navegación entre apuntes">
+                <a href="index.html" class="nav-link">HTML básico</a>
+                <a href="git-github.html" class="nav-link">Introducción</a>
+                <a href="vscode.html" class="nav-link">VS Code</a>
+                <a href="git.html" class="nav-link actual">Git y GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Palabras importantes</h2>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Git</h3>
+                    <p>Es la herramienta que registra los cambios del proyecto.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Repositorio</h3>
+                    <p>Es la carpeta del proyecto que está controlada con Git.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Commit</h3>
+                    <p>Es una foto guardada de los cambios que elegiste.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Push</h3>
+                    <p>Es la acción de subir tus commits a GitHub.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Pull</h3>
+                    <p>Es la acción de traer cambios nuevos desde GitHub a tu computadora.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Clone</h3>
+                    <p>Es bajar un proyecto por primera vez a tu computadora.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Branch</h3>
+                    <p>Es una rama de trabajo dentro del proyecto.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Changes y Staged Changes</h2>
+            <p>En la pestaña <code>Source Control</code> de VS Code aparecen los archivos modificados.</p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Changes</h3>
+                    <p>Son cambios que hiciste, pero todavía no preparaste para guardar.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Staged Changes</h3>
+                    <p>Son cambios que ya seleccionaste para que entren en el próximo commit.</p>
+                </article>
+            </div>
+            <p>Comando equivalente:</p>
+            <pre><code># Agrega un archivo al área de preparación
+git add index.html</code></pre>
+            <p>También se puede agregar otro archivo puntual:</p>
+            <pre><code># Agrega un archivo específico
+git add style.css</code></pre>
+            <p class="destacado">Idea simple: staged significa listo para guardar.</p>
+        </section>
+
+        <section>
+            <h2>3. Cómo clonar un proyecto desde la UI</h2>
+            <p>
+                Si querés bajar un proyecto por primera vez usando la interfaz de VS Code, los pasos son estos:
+            </p>
+            <ol>
+                <li>Abrir VS Code.</li>
+                <li>Apretar <code>Ctrl + Shift + P</code>.</li>
+                <li>Escribir <code>Git: Clone</code>.</li>
+                <li>Pegar la dirección del repositorio.</li>
+                <li>Elegir una carpeta para guardarlo.</li>
+                <li>Apretar <code>Open</code> cuando termine.</li>
+            </ol>
+            <p class="destacado">
+                Desde la UI, clonar significa usar la opción <code>Git: Clone</code> para bajar el proyecto sin escribir comandos.
+            </p>
+            <p>Comando equivalente en terminal:</p>
+            <pre><code># Descarga el proyecto por primera vez
+git clone https://github.com/CET-3/propuesta1.git</code></pre>
+            <p class="destacado">Clone significa bajar el proyecto por primera vez.</p>
+        </section>
+
+        <section>
+            <h2>4. Cómo hacer un commit desde la UI</h2>
+            <ol>
+                <li>Ir a <code>Source Control</code>.</li>
+                <li>Buscar los archivos modificados.</li>
+                <li>Tocar el signo <code>+</code> para pasarlos a <code>Staged Changes</code>.</li>
+                <li>Escribir un mensaje corto y claro.</li>
+                <li>Tocar <code>Commit</code>.</li>
+            </ol>
+            <p>Comandos equivalentes:</p>
+            <pre><code># Prepara el archivo para el commit
+git add index.html
+
+# Guarda una foto de los cambios
+git commit -m "Agrega página inicial"</code></pre>
+            <p>Ejemplos de mensajes:</p>
+            <pre><code>Agrega página inicial
+Corrige colores
+Separa estilos en CSS</code></pre>
+        </section>
+
+        <section>
+            <h2>5. Cómo hacer push y pull</h2>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Push</h3>
+                    <p>Después del commit, hay que tocar <code>Push</code> o <code>Sync Changes</code> para subirlo a GitHub.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Pull</h3>
+                    <p>Antes de empezar a trabajar, conviene hacer <code>Pull</code> para traer los cambios nuevos.</p>
+                </article>
+            </div>
+            <p>Comandos equivalentes:</p>
+            <pre><code># Sube los cambios a GitHub
+git push
+
+# Trae cambios nuevos desde GitHub
+git pull</code></pre>
+        </section>
+
+        <section>
+            <h2>6. Relación con Vercel</h2>
+            <p>
+                Cuando GitHub está conectado con Vercel, cada vez que hacemos <code>push</code>,
+                Vercel puede detectar los cambios y publicar una nueva versión del sitio.
+            </p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>GitHub</h3>
+                    <p>Guarda el proyecto y recibe los cambios que subimos.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Vercel</h3>
+                    <p>Publica el proyecto y puede actualizar la versión online automáticamente.</p>
+                </article>
+            </div>
+            <p class="destacado">
+                Idea simple: GitHub guarda el trabajo y Vercel lo publica en internet.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Orden recomendado de trabajo</h2>
+            <ol>
+                <li>Abrir el proyecto.</li>
+                <li>Hacer <code>Pull</code> si hace falta actualizar.</li>
+                <li>Modificar los archivos.</li>
+                <li>Revisar cambios en <code>Source Control</code>.</li>
+                <li>Pasarlos a <code>Staged Changes</code>.</li>
+                <li>Hacer <code>Commit</code>.</li>
+                <li>Hacer <code>Push</code>.</li>
+            </ol>
+            <p>Ejemplo completo por terminal:</p>
+            <pre><code># Actualiza la copia local
+git pull
+
+# Prepara un archivo para el commit
+git add style.css
+
+# Guarda los cambios con un mensaje
+git commit -m "Actualiza el proyecto"
+
+# Sube los cambios a GitHub
+git push</code></pre>
+        </section>
+
+        <section>
+            <h2>8. Requisitos</h2>
+            <p>
+                Para usar GitHub y publicar con Vercel, primero hace falta crear una cuenta en cada plataforma.
+            </p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Cuenta de GitHub</h3>
+                    <p>Creala desde la página oficial:</p>
+                    <p><a href="https://github.com/signup" target="_blank" rel="noopener noreferrer">https://github.com/signup</a></p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Cuenta de Vercel</h3>
+                    <p>Creala desde la página oficial:</p>
+                    <p><a href="https://vercel.com/signup/" target="_blank" rel="noopener noreferrer">https://vercel.com/signup/</a></p>
+                </article>
+            </div>
+            <p class="destacado">
+                Requisitos básicos: tener una cuenta en GitHub para guardar el proyecto y una cuenta en Vercel para publicarlo.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Resumen rápido: clone baja, pull actualiza, commit guarda y push sube.</p>
+    </footer>
+</body>
+</html>
