@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos Básicos de HTML</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="hero-marca">
+                <img src="assets/img/logo-unidos-cet3.png" alt="Logo de Unidos Mutual Escolar CET 3" class="logo-mutual">
+                <div>
+                    <p class="etiqueta">Apuntes MutuApp</p>
+                    <h1>Conceptos básicos de HTML</h1>
+                    <p class="hero-texto">
+                        HTML es el lenguaje que usamos para darle estructura al contenido de una página web.
+                        Con etiquetas definimos títulos, párrafos, listas, enlaces, imágenes y formularios.
+                    </p>
+                </div>
+            </div>
+            <nav class="nav-apuntes" aria-label="Navegación entre apuntes">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="arquitectura-web.html" class="nav-link">Arquitectura web</a>
+                <a href="html.html" class="nav-link actual">HTML básico</a>
+                <a href="css.html" class="nav-link">CSS básico</a>
+                <a href="herramientas.html" class="nav-link">Herramientas</a>
+                <a href="vscode.html" class="nav-link">VS Code</a>
+                <a href="git.html" class="nav-link">Git y GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Estructura general</h2>
+            <p>Un documento HTML suele empezar con estas partes principales:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Mi página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Contenido visible
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p>
+                <code>&lt;head&gt;</code> guarda información para el navegador y
+                <code>&lt;body&gt;</code> contiene lo que ve el usuario.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Etiquetas básicas</h2>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Títulos</h3>
+                    <p>Se usan con <code>&lt;h1&gt;</code> hasta <code>&lt;h6&gt;</code>.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Párrafos</h3>
+                    <p>Se escriben con la etiqueta <code>&lt;p&gt;</code>.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Contenedores</h3>
+                    <p><code>&lt;div&gt;</code> y <code>&lt;section&gt;</code> ayudan a organizar el contenido.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Listas</h2>
+            <p>HTML permite crear listas ordenadas y desordenadas.</p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Lista desordenada</h3>
+                    <ul>
+                        <li>Elemento uno</li>
+                        <li>Elemento dos</li>
+                        <li>Elemento tres</li>
+                    </ul>
+                </article>
+                <article class="tarjeta">
+                    <h3>Lista ordenada</h3>
+                    <ol>
+                        <li>Abrir el editor</li>
+                        <li>Escribir HTML</li>
+                        <li>Guardar y probar</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Enlaces e imágenes</h2>
+            <p>Los enlaces se crean con <code>&lt;a&gt;</code> y las imágenes con <code>&lt;img&gt;</code>.</p>
+            <p>
+                Ejemplo de enlace externo:
+                <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+                    Aprender más sobre HTML
+                </a>
+            </p>
+            <p>
+                Ejemplo de enlace interno entre páginas del proyecto:
+                <a href="herramientas.html">Ir a herramientas</a>
+            </p>
+            <img
+                src="assets/img/html5.svg"
+                alt="Logo de HTML5"
+                class="imagen-ejemplo"
+            >
+        </section>
+
+        <section>
+            <h2>5. Formularios</h2>
+            <p>Los formularios permiten ingresar datos desde la página.</p>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí un comentario"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>6. Cómo enlazar otra página</h2>
+            <p>Si queremos abrir otro archivo HTML del mismo proyecto, usamos un enlace como este:</p>
+            <pre><code>&lt;a href="herramientas.html"&gt;Ir a la otra página&lt;/a&gt;</code></pre>
+            <p class="destacado">
+                En este proyecto hay varias páginas distintas:
+                <a href="index.html">Inicio</a>,
+                <a href="html.html">HTML básico</a>,
+                <a href="css.html">CSS básico</a>,
+                <a href="arquitectura-web.html">Arquitectura web</a>,
+                <a href="herramientas.html">Herramientas</a>,
+                <a href="vscode.html">VS Code</a> y
+                <a href="git.html">Git y GitHub</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Rutas relativas, absolutas y archivos de la web</h2>
+            <p>
+                Cuando enlazamos una página, una imagen o un archivo, tenemos que indicar dónde está.
+                Eso se hace con una ruta.
+            </p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Ruta relativa</h3>
+                    <p>Apunta a un archivo teniendo en cuenta desde qué carpeta estamos parados.</p>
+                    <pre><code>herramientas.html
+assets/img/html5.svg
+imagenes/logo.png
+../otra-carpeta/pagina.html</code></pre>
+                </article>
+                <article class="tarjeta">
+                    <h3>Ruta absoluta</h3>
+                    <p>Indica la ubicación completa de un archivo, sin depender de dónde estamos parados.</p>
+                    <pre><code>/imagenes/logo.png
+C:/proyecto/imagenes/logo.png</code></pre>
+                </article>
+                <article class="tarjeta">
+                    <h3>Archivo de la web</h3>
+                    <p>Es un recurso que se carga desde internet usando una URL completa con <code>https://</code>.</p>
+                    <pre><code>&lt;img src="https://sitio.com/imagen.png" alt="Ejemplo"&gt;</code></pre>
+                </article>
+            </div>
+            <pre><code>&lt;a href="herramientas.html"&gt;Otra página&lt;/a&gt;
+&lt;img src="assets/img/html5.svg" alt="Logo"&gt;</code></pre>
+            <p class="destacado">
+                Regla simple: una ruta relativa depende de dónde estás parado.
+                Una ruta absoluta indica una ubicación completa.
+                Un archivo de la web se trae desde internet con una URL.
+            </p>
+        </section>
+
+        <section>
+            <h2>8. Diferencia entre div, span, section y article</h2>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>div</h3>
+                    <p>Es un contenedor genérico de bloque. Agrupa contenido, pero no indica qué tipo de contenido es.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>span</h3>
+                    <p>Es un contenedor genérico en línea. Se usa para marcar una parte chica de texto.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>section</h3>
+                    <p>Se usa para agrupar contenido relacionado dentro de una misma sección o tema.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>article</h3>
+                    <p>Representa una pieza de contenido independiente, como una noticia, una tarjeta o una publicación.</p>
+                </article>
+            </div>
+            <pre><code>&lt;section&gt;
+  &lt;h2&gt;Noticias&lt;/h2&gt;
+
+  &lt;article&gt;
+    &lt;h3&gt;Nuevo curso de HTML&lt;/h3&gt;
+    &lt;p&gt;Empieza la semana próxima.&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/section&gt;</code></pre>
+            <section class="tarjeta ejemplo-render">
+                <h3>Noticias</h3>
+                <article class="tarjeta tarjeta-interna">
+                    <h4>Nuevo curso de HTML</h4>
+                    <p>Empieza la semana próxima.</p>
+                </article>
+            </section>
+            <pre><code>&lt;div class="tarjeta"&gt;
+  &lt;p&gt;Aprendiendo &lt;span class="destacado-texto"&gt;HTML&lt;/span&gt; paso a paso.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            <div class="tarjeta ejemplo-render">
+                <p>Aprendiendo <span class="destacado-texto">HTML</span> paso a paso.</p>
+            </div>
+            <p class="destacado">
+                Regla simple: <code>div</code> y <code>span</code> agrupan sin significado.
+                <code>section</code> y <code>article</code> agrupan y además describen qué tipo de contenido es.
+            </p>
+        </section>
+
+        <section>
+            <h2>9. Por qué a veces aparece &amp;lt; y &amp;gt;</h2>
+            <p>
+                Cuando queremos mostrar código HTML en la pantalla sin que el navegador lo interprete,
+                usamos caracteres especiales.
+            </p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>&amp;lt;</h3>
+                    <p>Representa el símbolo <code>&lt;</code></p>
+                </article>
+                <article class="tarjeta">
+                    <h3>&amp;gt;</h3>
+                    <p>Representa el símbolo <code>&gt;</code></p>
+                </article>
+            </div>
+            <pre><code>&lt;p&gt;Hola&lt;/p&gt;</code></pre>
+            <p class="destacado">
+                Si escribimos <code>&lt;p&gt;</code> como código real, el navegador crea un párrafo.
+                Si escribimos <code>&amp;lt;p&amp;gt;</code>, el navegador lo muestra en pantalla como texto.
+            </p>
+        </section>
+    </main>
+
+    <div class="paginacion">
+        <a href="arquitectura-web.html" class="pagina-link">← Anterior: Arquitectura web</a>
+        <a href="css.html" class="pagina-link">Siguiente: CSS básico →</a>
+    </div>
+
+    <footer>
+        <p>Esta página resume los conceptos iniciales para empezar a trabajar con HTML.</p>
+    </footer>
+</body>
+</html>

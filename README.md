@@ -4,7 +4,8 @@ Sitio estático con apuntes introductorios para trabajar HTML, CSS, arquitectura
 
 ## Contenido
 
-- `index.html`: apuntes básicos de HTML
+- `index.html`: portada general del sitio
+- `html.html`: apuntes básicos de HTML
 - `css.html`: apuntes básicos de CSS
 - `arquitectura-web.html`: apuntes sobre internet y arquitectura de aplicaciones web
 - `herramientas.html`: introducción a VS Code, GitHub y Vercel
@@ -14,6 +15,7 @@ Sitio estático con apuntes introductorios para trabajar HTML, CSS, arquitectura
 ```text
 propuesta1/
   index.html
+  html.html
   css.html
   arquitectura-web.html
   herramientas.html
@@ -32,6 +34,7 @@ propuesta1/
 
 Las páginas están conectadas entre sí mediante un menú superior:
 
+- Inicio
 - Arquitectura web
 - HTML básico
 - CSS básico
