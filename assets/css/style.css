@@ -282,6 +282,32 @@ footer {
     color: var(--texto-suave);
 }
 
+.paginacion {
+    width: min(1120px, calc(100% - 24px));
+    margin: 0 auto 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.pagina-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 12px 18px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid var(--borde);
+    box-shadow: 0 14px 32px rgba(39, 62, 112, 0.09);
+    text-decoration: none;
+}
+
+.pagina-link-inactiva {
+    color: var(--texto-suave);
+    font-weight: 600;
+}
+
 @media (max-width: 720px) {
     header {
         padding-top: 24px;
@@ -308,5 +334,14 @@ footer {
     section {
         padding: 22px 18px;
         border-radius: 22px;
+    }
+
+    .paginacion {
+        margin-bottom: 18px;
+    }
+
+    .pagina-link {
+        width: 100%;
+        justify-content: center;
     }
 }
