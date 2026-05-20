@@ -1,9 +1,9 @@
 :root {
-    --fondo: #f4efe6;
     --panel: #fffaf3;
     --texto: #1f2937;
     --acento: #c26d3a;
     --borde: #e5d3c2;
+    --destacado: #f3e2d2;
 }
 
 * {
@@ -21,6 +21,17 @@ body {
 header {
     text-align: center;
     padding: 48px 20px 24px;
+}
+
+.etiqueta {
+    display: inline-block;
+    margin: 0 0 12px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #7a3e1d;
+    color: #fffaf3;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
 }
 
 h1 {
@@ -89,8 +100,48 @@ pre code {
     padding: 16px;
 }
 
+.tarjeta h3 {
+    margin-top: 0;
+}
+
 a {
     color: #9f4f21;
+}
+
+.imagen-ejemplo {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 12px;
+    border: 1px solid var(--borde);
+}
+
+.destacado {
+    margin-top: 16px;
+    padding: 14px 16px;
+    border-left: 5px solid var(--acento);
+    border-radius: 10px;
+    background: var(--destacado);
+    font-weight: bold;
+}
+
+.destacado-texto {
+    color: #7a3e1d;
+    font-weight: bold;
+}
+
+.ejemplo-render {
+    margin-top: 16px;
+}
+
+.tarjeta-interna {
+    margin-top: 12px;
+    background: #fffaf3;
+}
+
+ol,
+ul {
+    padding-left: 22px;
+    line-height: 1.7;
 }
 
 form {

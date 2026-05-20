@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git y GitHub en VS Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p class="etiqueta">Apuntes MutuApp</p>
+        <h1>Git y GitHub en VS Code</h1>
+        <p>
+            Esta página resume las ideas básicas que hace falta conocer para trabajar con un proyecto,
+            guardar cambios y subirlos a GitHub usando la interfaz gráfica de VS Code.
+        </p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Qué es cada cosa</h2>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Git</h3>
+                    <p>Es una herramienta que sirve para guardar cambios en un proyecto.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>GitHub</h3>
+                    <p>Es una página web donde los proyectos pueden guardarse y compartirse por internet.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>VS Code</h3>
+                    <p>Es el editor donde escribimos código y también podemos usar Git con botones.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Palabras importantes</h2>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Repositorio</h3>
+                    <p>Es la carpeta del proyecto que está controlada con Git.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Commit</h3>
+                    <p>Es una foto guardada de los cambios que elegiste.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Push</h3>
+                    <p>Es la acción de subir tus commits a GitHub.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Pull</h3>
+                    <p>Es la acción de traer cambios nuevos desde GitHub a tu computadora.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Clone</h3>
+                    <p>Es bajar un proyecto por primera vez a tu computadora.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Branch</h3>
+                    <p>Es una rama de trabajo dentro del proyecto.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Changes y Staged Changes</h2>
+            <p>En la pestaña <code>Source Control</code> de VS Code aparecen los archivos modificados.</p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Changes</h3>
+                    <p>Son cambios que hiciste, pero todavía no preparaste para guardar.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Staged Changes</h3>
+                    <p>Son cambios que ya seleccionaste para que entren en el próximo commit.</p>
+                </article>
+            </div>
+            <p class="destacado">Idea simple: staged significa listo para guardar.</p>
+        </section>
+
+        <section>
+            <h2>4. Cómo clonar un proyecto desde la UI</h2>
+            <ol>
+                <li>Abrir VS Code.</li>
+                <li>Apretar <code>Ctrl + Shift + P</code>.</li>
+                <li>Escribir <code>Git: Clone</code>.</li>
+                <li>Pegar la dirección del repositorio.</li>
+                <li>Elegir una carpeta para guardarlo.</li>
+                <li>Apretar <code>Open</code> cuando termine.</li>
+            </ol>
+            <p class="destacado">Clone significa bajar el proyecto por primera vez.</p>
+        </section>
+
+        <section>
+            <h2>5. Cómo hacer un commit desde la UI</h2>
+            <ol>
+                <li>Ir a <code>Source Control</code>.</li>
+                <li>Buscar los archivos modificados.</li>
+                <li>Tocar el signo <code>+</code> para pasarlos a <code>Staged Changes</code>.</li>
+                <li>Escribir un mensaje corto y claro.</li>
+                <li>Tocar <code>Commit</code>.</li>
+            </ol>
+            <pre><code>Ejemplos de mensajes:
+Agrega página inicial
+Corrige colores
+Separa estilos en CSS</code></pre>
+        </section>
+
+        <section>
+            <h2>6. Como hacer push y pull</h2>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Push</h3>
+                    <p>Después del commit, hay que tocar <code>Push</code> o <code>Sync Changes</code> para subirlo a GitHub.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Pull</h3>
+                    <p>Antes de empezar a trabajar, conviene hacer <code>Pull</code> para traer los cambios nuevos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>7. Orden recomendado de trabajo</h2>
+            <ol>
+                <li>Abrir el proyecto.</li>
+                <li>Hacer <code>Pull</code> si hace falta actualizar.</li>
+                <li>Modificar los archivos.</li>
+                <li>Revisar cambios en <code>Source Control</code>.</li>
+                <li>Pasarlos a <code>Staged Changes</code>.</li>
+                <li>Hacer <code>Commit</code>.</li>
+                <li>Hacer <code>Push</code>.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>8. Enlace a la otra página</h2>
+            <p>Un enlace entre páginas del mismo proyecto se hace con la etiqueta <code>&lt;a&gt;</code>.</p>
+            <pre><code>&lt;a href="index.html"&gt;Volver a HTML básico&lt;/a&gt;</code></pre>
+            <p class="destacado">
+                Probá este enlace:
+                <a href="index.html">Volver a la página de HTML básico</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Resumen rápido: clone baja, pull actualiza, commit guarda y push sube.</p>
+    </footer>
+</body>
+</html>
