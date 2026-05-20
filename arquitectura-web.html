@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura de Internet y Aplicaciones Web</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="hero-marca">
+                <img src="assets/img/logo-unidos-cet3.png" alt="Logo de Unidos Mutual Escolar CET 3" class="logo-mutual">
+                <div>
+                    <p class="etiqueta">Apuntes MutuApp</p>
+                    <h1>Arquitectura de Internet y aplicaciones web</h1>
+                    <p class="hero-texto">
+                        Este apunte explica cómo viaja la información por internet y cómo se organizan
+                        las aplicaciones web entre cliente, servidor, base de datos y APIs.
+                    </p>
+                </div>
+            </div>
+            <nav class="nav-apuntes" aria-label="Navegación entre apuntes">
+                <a href="arquitectura-web.html" class="nav-link actual">Arquitectura web</a>
+                <a href="index.html" class="nav-link">HTML básico</a>
+                <a href="css.html" class="nav-link">CSS básico</a>
+                <a href="herramientas.html" class="nav-link">Herramientas</a>
+                <a href="vscode.html" class="nav-link">VS Code</a>
+                <a href="git.html" class="nav-link">Git y GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. ¿Qué es internet?</h2>
+            <p>
+                Internet es una red enorme de computadoras y dispositivos conectados entre sí.
+                Gracias a esa red, una máquina puede pedir información y otra puede responder.
+            </p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Cliente</h3>
+                    <p>Es el dispositivo que hace el pedido, por ejemplo una computadora o un celular.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Servidor</h3>
+                    <p>Es la computadora que recibe el pedido y responde con información.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Red</h3>
+                    <p>Es el conjunto de conexiones que permite que los datos viajen de un lugar a otro.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. IP, dominio y DNS</h2>
+            <p>
+                Para encontrar un sitio en internet hacen falta direcciones. Algunas son numéricas y otras son nombres más fáciles de recordar.
+            </p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>IP</h3>
+                    <p>Es una dirección numérica que identifica a una máquina en la red.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Dominio</h3>
+                    <p>Es el nombre que usamos para entrar a un sitio, por ejemplo <code>google.com</code>.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>DNS</h3>
+                    <p>Es el sistema que traduce un dominio a una dirección IP.</p>
+                </article>
+            </div>
+            <p class="destacado">
+                Idea simple: el dominio es el nombre, la IP es la dirección y el DNS es quien hace la traducción.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. ¿Qué pasa cuando escribimos una URL?</h2>
+            <ol>
+                <li>La persona escribe una dirección en el navegador.</li>
+                <li>El navegador busca la IP usando DNS.</li>
+                <li>Se conecta con el servidor.</li>
+                <li>El servidor responde con archivos o datos.</li>
+                <li>El navegador muestra el contenido en pantalla.</li>
+            </ol>
+            <pre><code>Persona
+  ↓
+Navegador
+  ↓
+DNS
+  ↓
+Servidor
+  ↓
+Respuesta
+  ↓
+Pantalla</code></pre>
+        </section>
+
+        <section>
+            <h2>4. HTTP y HTTPS</h2>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>HTTP</h3>
+                    <p>Es el protocolo que se usa para enviar y recibir información web.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>HTTPS</h3>
+                    <p>Es una versión más segura de HTTP porque protege la comunicación.</p>
+                </article>
+            </div>
+            <p class="destacado">
+                En la mayoría de los sitios actuales se usa <code>https://</code> porque mejora la seguridad.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. ¿Qué es una aplicación web?</h2>
+            <p>
+                Una aplicación web es un programa que usamos desde el navegador.
+                Puede mostrar información, recibir datos del usuario y trabajar con lógica del lado del servidor.
+            </p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Sitio web</h3>
+                    <p>Suele mostrar contenido, como textos, imágenes y páginas informativas.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Aplicación web</h3>
+                    <p>Además de mostrar contenido, permite interactuar, guardar datos y realizar acciones.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Frontend, backend y base de datos</h2>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Frontend</h3>
+                    <p>Es la parte que ve y usa la persona: botones, textos, formularios, imágenes.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Backend</h3>
+                    <p>Es la parte que procesa pedidos, aplica lógica y prepara respuestas.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Base de datos</h3>
+                    <p>Es donde se guarda la información del sistema.</p>
+                </article>
+            </div>
+            <pre><code>Frontend → Backend → Base de datos
+Frontend ← Backend ← Base de datos</code></pre>
+        </section>
+
+        <section>
+            <h2>7. ¿Qué es una API?</h2>
+            <p>
+                Una API es una forma de comunicación entre programas. En una aplicación web, el frontend puede pedir datos a una API
+                y el backend responde con la información.
+            </p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Pedido</h3>
+                    <p>El frontend solicita información, por ejemplo una lista de productos.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Respuesta</h3>
+                    <p>El backend devuelve los datos para que el frontend los muestre.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>8. Ejemplo completo</h2>
+            <p>Imaginemos una aplicación para ver notas escolares.</p>
+            <ol>
+                <li>La persona entra al sitio desde el navegador.</li>
+                <li>El frontend muestra la pantalla inicial.</li>
+                <li>El usuario inicia sesión.</li>
+                <li>El frontend envía el pedido al backend.</li>
+                <li>El backend consulta la base de datos.</li>
+                <li>La base de datos devuelve la información.</li>
+                <li>El backend responde al frontend.</li>
+                <li>El frontend muestra las notas en pantalla.</li>
+            </ol>
+            <pre><code>Usuario
+  ↓
+Frontend
+  ↓
+Backend
+  ↓
+Base de datos
+  ↑
+Respuesta
+  ↑
+Pantalla</code></pre>
+        </section>
+
+        <section>
+            <h2>9. Requisitos</h2>
+            <p>
+                Para entender este tema conviene conocer primero qué es HTML, CSS y qué papel cumplen VS Code, GitHub y Vercel.
+            </p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>HTML y CSS</h3>
+                    <p>Sirven para entender la parte visual de una página web.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Herramientas</h3>
+                    <p>Sirven para entender cómo se crea, guarda y publica un proyecto.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>10. Para explorar</h2>
+            <p>
+                Si querés ver algo interesante sobre cómo se conecta internet en el mundo real, podés mirar este mapa interactivo
+                de cables submarinos.
+            </p>
+            <div class="grid">
+                <article class="tarjeta">
+                    <h3>Submarine Cable Map</h3>
+                    <p>Muestra muchos de los cables submarinos que conectan continentes y permiten que viajen los datos por internet.</p>
+                    <p><a href="https://www.submarinecablemap.com/" target="_blank" rel="noopener noreferrer">https://www.submarinecablemap.com/</a></p>
+                </article>
+            </div>
+            <p class="destacado">
+                Idea interesante: gran parte de internet no viaja “por el aire”, sino por cables físicos que cruzan océanos.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Resumen rápido: el cliente pide, el servidor responde y la aplicación web organiza esa comunicación.</p>
+    </footer>
+</body>
+</html>
