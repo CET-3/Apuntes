@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conceptos Básicos de HTML</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
         <div class="hero">
             <div class="hero-marca">
-                <img src="logo-unidos-cet3.png" alt="Logo de Unidos Mutual Escolar CET 3" class="logo-mutual">
+                <img src="assets/img/logo-unidos-cet3.png" alt="Logo de Unidos Mutual Escolar CET 3" class="logo-mutual">
                 <div>
                     <p class="etiqueta">Apuntes MutuApp</p>
                     <h1>Conceptos básicos de HTML</h1>
@@ -23,7 +23,7 @@
             <nav class="nav-apuntes" aria-label="Navegación entre apuntes">
                 <a href="index.html" class="nav-link actual">HTML básico</a>
                 <a href="css.html" class="nav-link">CSS básico</a>
-                <a href="git-github.html" class="nav-link">Herramientas</a>
+                <a href="herramientas.html" class="nav-link">Herramientas</a>
                 <a href="vscode.html" class="nav-link">VS Code</a>
                 <a href="git.html" class="nav-link">Git y GitHub</a>
             </nav>
@@ -101,10 +101,10 @@
             </p>
             <p>
                 Ejemplo de enlace interno entre páginas del proyecto:
-                <a href="git-github.html">Ir a la introducción</a>
+                <a href="herramientas.html">Ir a herramientas</a>
             </p>
             <img
-                src="html5.svg"
+                src="assets/img/html5.svg"
                 alt="Logo de HTML5"
                 class="imagen-ejemplo"
             >
@@ -127,12 +127,12 @@
         <section>
             <h2>6. Cómo enlazar otra página</h2>
             <p>Si queremos abrir otro archivo HTML del mismo proyecto, usamos un enlace como este:</p>
-            <pre><code>&lt;a href="git-github.html"&gt;Ir a la otra página&lt;/a&gt;</code></pre>
+            <pre><code>&lt;a href="herramientas.html"&gt;Ir a la otra página&lt;/a&gt;</code></pre>
             <p class="destacado">
                 En este proyecto hay varias páginas distintas:
                 <a href="index.html">HTML básico</a>,
                 <a href="css.html">CSS básico</a>,
-                <a href="git-github.html">Herramientas</a>,
+                <a href="herramientas.html">Herramientas</a>,
                 <a href="vscode.html">VS Code</a> y
                 <a href="git.html">Git y GitHub</a>.
             </p>
@@ -148,8 +148,8 @@
                 <article class="tarjeta">
                     <h3>Ruta relativa</h3>
                     <p>Apunta a un archivo teniendo en cuenta desde qué carpeta estamos parados.</p>
-                    <pre><code>git-github.html
-html5.svg
+                    <pre><code>herramientas.html
+assets/img/html5.svg
 imagenes/logo.png
 ../otra-carpeta/pagina.html</code></pre>
                 </article>
@@ -165,8 +165,8 @@ C:/proyecto/imagenes/logo.png</code></pre>
                     <pre><code>&lt;img src="https://sitio.com/imagen.png" alt="Ejemplo"&gt;</code></pre>
                 </article>
             </div>
-            <pre><code>&lt;a href="git-github.html"&gt;Otra página&lt;/a&gt;
-&lt;img src="html5.svg" alt="Logo"&gt;</code></pre>
+            <pre><code>&lt;a href="herramientas.html"&gt;Otra página&lt;/a&gt;
+&lt;img src="assets/img/html5.svg" alt="Logo"&gt;</code></pre>
             <p class="destacado">
                 Regla simple: una ruta relativa depende de dónde estás parado.
                 Una ruta absoluta indica una ubicación completa.
