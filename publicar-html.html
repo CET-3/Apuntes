@@ -265,47 +265,49 @@ Ordená este HTML usando header, main, section y footer.</code></pre>
                 GitHub funciona como un lugar donde el proyecto queda guardado en internet. También conserva
                 la historia de cambios y sirve como puente con Vercel.
             </p>
-            <div class="grid">
-                <article class="tarjeta">
-                    <h3>Guardar</h3>
-                    <p>El proyecto deja de existir solo en una computadora.</p>
-                </article>
-                <article class="tarjeta">
-                    <h3>Ordenar</h3>
-                    <p>Los cambios pueden registrarse con commits y mensajes claros.</p>
-                </article>
-                <article class="tarjeta">
-                    <h3>Conectar</h3>
-                    <p>Vercel puede importar el repositorio para publicarlo.</p>
-                </article>
-            </div>
+            <p>
+                En esta etapa, el trabajo con GitHub puede pensarse en cuatro acciones concretas. Si necesitan
+                repasarlas, pueden mirar el apunte de <a href="git.html">Git y GitHub</a>.
+            </p>
+            <ol>
+                <li><strong><a href="git.html#crear-repo">Crear</a></strong>: crear el proyecto o repositorio para empezar a registrar su historia.</li>
+                <li><strong><a href="git.html#agregar-archivos">Agregar</a></strong>: agregar los archivos o cambios que quieren guardar en la próxima versión.</li>
+                <li><strong><a href="git.html#hacer-commit">Commit</a></strong>: guardar esa versión con un mensaje claro.</li>
+                <li><strong><a href="git.html#hacer-push">Push</a></strong>: subir esa versión a GitHub.</li>
+            </ol>
+            <p>
+                En el día a día, o mientras se está trabajando en el proyecto, lo que más se hace es
+                <code>commit</code>, porque sirve para ir guardando versiones del trabajo. Los <code>add</code>
+                aparecen sobre todo cuando hay archivos nuevos o cambios que todavía no fueron preparados.
+                Y cuando una persona ya está conforme con esa versión, recién ahí hace <code>push</code>
+                para subirla a GitHub.
+            </p>
             <p class="destacado">
-                Idea simple: GitHub no publica la página, pero la deja lista para que Vercel la publique.
+                En resumen: crean el proyecto, agregan los archivos, hacen commit y hacen push a GitHub.
             </p>
         </section>
 
         <section>
             <h2>10. ¿Qué hace Vercel en este proceso?</h2>
             <p>
-                A la fecha del 27 de mayo de 2026, Vercel sigue permitiendo importar un repositorio de GitHub
-                y publicar un sitio estático sin configuración extra.
+                Una vez que el proyecto ya está conectado con Vercel, cada vez que hacen <code>push</code> se deploya
+                una nueva versión del sitio.
             </p>
             <p>
-                En un sitio estático simple, Vercel detecta los archivos del proyecto y genera una publicación
-                accesible desde una URL pública. Eso permite compartir la página sin enviar la carpeta completa.
+                Eso significa que el sitio publicado se actualiza cuando suben cambios nuevos a GitHub.
             </p>
             <div class="grid">
                 <article class="tarjeta">
-                    <h3>Importar</h3>
-                    <p>Toma el repositorio desde GitHub.</p>
+                    <h3>Detectar</h3>
+                    <p>Vercel detecta que llegó una nueva versión del proyecto.</p>
                 </article>
                 <article class="tarjeta">
                     <h3>Deployar</h3>
-                    <p>Prepara una versión publicada del proyecto.</p>
+                    <p>Publica una nueva versión del sitio.</p>
                 </article>
                 <article class="tarjeta">
-                    <h3>Compartir</h3>
-                    <p>Entrega una dirección web que puede abrirse desde internet.</p>
+                    <h3>Actualizar</h3>
+                    <p>La URL publicada pasa a mostrar los cambios nuevos.</p>
                 </article>
             </div>
             <p class="destacado">
@@ -334,10 +336,20 @@ Ordená este HTML usando header, main, section y footer.</code></pre>
                 con una experiencia simple de trabajo en equipo. La idea es que otra persona tome ese mismo
                 proyecto, haga un cambio y vea cómo ese cambio también llega a la web publicada.
             </p>
+            <p>
+                En VS Code, el <strong>workspace</strong> es el espacio de trabajo que queda abierto en el editor.
+                A veces ese workspace contiene una sola carpeta o proyecto, y otras veces puede incluir más de uno.
+                Por eso no siempre hay un único proyecto abierto: una persona puede tener varios proyectos disponibles
+                dentro del mismo espacio de trabajo y moverse entre ellos.
+            </p>
+            <p>
+                En este caso, si otra persona clona el repositorio y abre esa carpeta en VS Code, incorpora ese proyecto
+                a su propio workspace y puede editarlo, revisar cambios y trabajar con Git desde ahí.
+            </p>
             <ol>
                 <li>Una persona crea el proyecto y lo publica.</li>
                 <li>Otra persona clona el repositorio desde GitHub.</li>
-                <li>Esa segunda persona abre el proyecto en VS Code.</li>
+                <li>Esa segunda persona abre esa carpeta como workspace en VS Code.</li>
                 <li>Hace un cambio visible, por ejemplo un color, un título o una sección nueva.</li>
                 <li>Guarda el cambio con commit y lo sube a GitHub.</li>
                 <li>Vercel detecta ese cambio y vuelve a publicar el sitio.</li>
@@ -347,7 +359,7 @@ Ordená este HTML usando header, main, section y footer.</code></pre>
                 para compartir el trabajo y construir una misma página entre varias personas.
             </p>
             <p class="destacado">
-                Idea simple: si otra persona clona el proyecto, cambia algo y lo sube, Vercel puede publicar esa nueva versión también.
+                Idea simple: si otra persona clona el proyecto, abre ese workspace, cambia algo y lo sube, Vercel puede publicar esa nueva versión también.
             </p>
         </section>
 

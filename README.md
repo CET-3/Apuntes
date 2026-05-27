@@ -11,7 +11,7 @@ Sitio estático con apuntes introductorios para trabajar HTML, CSS, arquitectura
 - `herramientas.html`: introducción a VS Code, GitHub y Vercel
 - `vscode.html`: apuntes sobre VS Code
 - `git.html`: apuntes sobre Git, GitHub y Vercel
-- `publicar-html.html`: guía de clase para crear y publicar una página HTML
+- `publicar-html.html`: apunte sobre cómo crear y publicar una página HTML
 
 ```text
 propuesta1/
@@ -43,7 +43,7 @@ Las páginas están conectadas entre sí mediante un menú superior:
 - Herramientas
 - VS Code
 - Git y GitHub
-- Clase práctica
+- Publicación HTML
 
 ## Estructura
 

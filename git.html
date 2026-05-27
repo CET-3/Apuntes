@@ -28,7 +28,7 @@
                 <a href="herramientas.html" class="nav-link">Herramientas</a>
                 <a href="vscode.html" class="nav-link">VS Code</a>
                 <a href="git.html" class="nav-link actual">Git y GitHub</a>
-                <a href="publicar-html.html" class="nav-link">Clase práctica</a>
+                <a href="publicar-html.html" class="nav-link">Publicación HTML</a>
             </nav>
         </div>
     </header>
@@ -139,7 +139,7 @@
         </section>
 
         <section>
-            <h2>5. Cómo crear un proyecto o repositorio nuevo</h2>
+            <h2 id="crear-repo">5. Cómo crear un proyecto o repositorio nuevo</h2>
             <p>
                 A veces no vamos a bajar un proyecto ya hecho, sino a empezar uno desde cero.
                 En ese caso primero se crea la carpeta del proyecto y después se la conecta con GitHub.
@@ -174,7 +174,7 @@ git clone https://github.com/CET-3/propuesta1.git</code></pre>
         </section>
 
         <section>
-            <h2>7. Cambios y cambios preparados</h2>
+            <h2 id="agregar-archivos">7. Cambios y cambios preparados</h2>
             <p>
                 Para poder subir algo, primero hace falta crear o modificar archivos en el proyecto.
                 En la pestaña <code>Control de código fuente</code> de VS Code aparecen esos cambios y suelen organizarse en dos grupos importantes.
@@ -205,7 +205,7 @@ git add style.css</code></pre>
         </section>
 
         <section>
-            <h2>8. Cómo guardar cambios</h2>
+            <h2 id="hacer-commit">8. Cómo guardar cambios</h2>
             <p>
                 Cuando hacemos un cambio en el proyecto, normalmente el recorrido es:
                 elegir archivos, escribir un mensaje y guardar esa nueva versión.
@@ -230,7 +230,26 @@ Separa estilos en CSS</code></pre>
         </section>
 
         <section>
-            <h2>9. Cómo se conecta con Vercel</h2>
+            <h2 id="hacer-push">9. Cómo hacer push</h2>
+            <p>
+                Después de hacer cambios y guardarlos con commit, el paso siguiente es hacer <code>push</code>.
+                Eso significa subir esa nueva versión del proyecto a GitHub.
+            </p>
+            <ol>
+                <li>Hacemos un cambio en VS Code.</li>
+                <li>Guardamos la nueva versión con commit.</li>
+                <li>La subimos a GitHub con push.</li>
+            </ol>
+            <p>Comando equivalente:</p>
+            <pre><code># Sube la nueva versión del proyecto a GitHub
+git push origin main</code></pre>
+            <p class="destacado">
+                Idea simple: commit guarda la versión en la historia del proyecto y push la sube a GitHub.
+            </p>
+        </section>
+
+        <section>
+            <h2>10. Qué pasa después del push</h2>
             <p>
                 Cuando GitHub está conectado con Vercel, el proyecto no solo queda guardado:
                 también puede terminar publicado en internet.
@@ -243,33 +262,21 @@ Separa estilos en CSS</code></pre>
                 <li>Vercel publica la nueva versión del sitio.</li>
             </ol>
             <p class="destacado">
-                Idea simple: GitHub guarda el trabajo y Vercel lo publica.
+                Idea simple: cuando el proyecto ya está conectado, cada push puede terminar en una nueva versión publicada.
             </p>
         </section>
 
         <section>
-            <h2>10. Primer ejercicio del proyecto</h2>
+            <h2>11. Primer ejercicio del proyecto</h2>
             <p>
                 El primer ejercicio consiste en hacer una página estática de la mutual escolar y dejarla publicada en Vercel.
+                Para ver ese recorrido paso a paso, conviene seguir el apunte
+                <a href="publicar-html.html">Publicación HTML</a>.
             </p>
-            <div class="grid">
-                <article class="tarjeta">
-                    <h3>Parte 1</h3>
-                    <p>Crear o modificar una página sencilla con contenido de la mutual.</p>
-                </article>
-                <article class="tarjeta">
-                    <h3>Parte 2</h3>
-                    <p>Guardar los cambios en GitHub con commit y push.</p>
-                </article>
-                <article class="tarjeta">
-                    <h3>Parte 3</h3>
-                    <p>Comprobar que Vercel publique la versión nueva.</p>
-                </article>
-            </div>
         </section>
 
         <section>
-            <h2>11. Requisitos</h2>
+            <h2>12. Requisitos</h2>
             <p>
                 Para usar GitHub y publicar con Vercel, primero hace falta crear una cuenta en cada plataforma.
             </p>
